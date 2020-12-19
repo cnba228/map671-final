@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Georgia County Health Comparison</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f8fafd;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: #242424;
+    }
+
+    section {
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 2.5em;
+      /* The em unit. 2.5x the current size */
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      color: gray;
+      font-size: 1.25em;
+      letter-spacing: .04em;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    a {
+      color: #005daa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0
+    }
+
+    #map {
+      width: 100%;
+      margin: 0px auto;
+
+    }
+
+    .max-image-width {
+      width: 100%;
+    }
+
+
+    .linkbox {
+      margin: 3px 0 20px 0;
+      display: block;
+      font-weight: 300;
+    }
+
+    hr {
+      border: 0px;
+      border-bottom: 1px solid #3d3d3d;
+      padding-top: 20px;
+    }
+
+    /* Use float property to make two-column layout. */
+
+    .first-column {
+      float: left;
+      width: 48%;
+      padding-right: 20px;
+    }
+
+    .column {
+      float: left;
+      width: 48%;
+    }
+
+    /* Clear floats after the columns */
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* When browser is 800px wide or less */
+
+    @media screen and (max-width: 800px) {
+      .first-column,
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section>
+  
+    <h1>Examining the The relationship between Food Insecurity and Obesity in Georgia, by County</h1>
+    <h2>Authored by: Caitlin Baer for New Maps Plus</h2>
+
+    <div class="row">
+      
+      <!-- First column begins here -->
+      <div class="first-column">
+        <br><br>
+        <p>Obesity and food insecurity are both public health concerns that have influences at the individual and environmental levels. Approximately one in three US adults are obese(1), and are at increased risk of negative health consequences, including premature death, coronary heart disease, hypertension, stroke, type 2 diabetes, and certain types of cancer (2,3). 
+          <p>We observe the relationship of Georgians with access to healthy foods and the prevalence of obesity by county. In the projections provided we observe that in areas with increased access to healthy foods (greater Atlanta region) the prevalence of obesity declines. In several areas with decreased access to healthy foods (central and southern Georgia) the prevalence of obesity increases.</p>
+        </p>
+          
+ 
+      </div>
+      
+      <!-- Second column begins here-->
+      <div class="column"><br>
+        <img class="max-image-width" src="graphics/GeorgiaObesity.jpg">
+        <a href='graphics/GeorgiaObesity.jpg' class="linkbox">Full screen version</a>
+        <img class="max-image-width" src="graphics/GAaccess.jpg">
+        <a href='graphics/GAaccess.jpg' class="linkbox">Full screen version</a>
+      </div>
+       
+
+      </div>
+    </div>
+  <hr>
+    <h3>Map Details and Data Sources</h3>
+    <p>This map was made using QGIS 3.10 and OpenStreetMap. University of Kentucky New Maps Plus, Winter 2020. <br><br>
+      1.<a href="http://www.countyhealthrankings.org/">The 2020 County Health Rankings</a></a> <br>
+2. <a href="http://www.ers.usda.gov/foodatlas/">The 2010 Food Environment Atlas</a>, which is a project of the US Department of Agriculture (USDA) Economic Research Service (ERS) that sources data from the U.S. Census and the USDA. <br>
+3. Flegal KM, Carroll MD, Kit BK, Ogden CL. Prevalence of obesity and trends in the distribution of body mass index among US adults, 1999–2010. JAMA. 2012;307(5):491–497. <br>
+4. National Heart, Lung, and Blood Institute. Clinical guidelines on the identification, evaluation, and treatment of overweight and obesity in adults—The evidence report. Obes Res. 1998 <br><br>
+I. Obesity is defined as BMI>=30 kg/m2 <br>
+II. Access to healthy foods is measured at the household level observing the condition of those with and without limited or uncertain access to adequate nutritious food.
+    </p>
+    <hr>
+    <ul>
+      <li>Follow me on twitter <a href="https://twitter.com/caitlinbaer">@caitlinbaer</a></li> <!-- or any other social media site -->
+      <li>Visit my Github account <a href='https://github.com/cnba228'>@cnba228</a> </li>
+      <li><a href="https://newmapsplus.github.io">New Maps Plus</a></li>
+    </ul>
+  </section>
+
+</body>
+</html>
